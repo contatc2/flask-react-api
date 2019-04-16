@@ -12,6 +12,7 @@ body {
 #root > div {
   display: flex;
   height: 100vh;
+  width: 90vw;
 }
 
 .left-scene {
@@ -29,7 +30,6 @@ body {
       box-shadow: none;
     }
   }
-
   &:before {
     content: '\F002';
     position: absolute;
@@ -39,6 +39,17 @@ body {
     font-size: 2.6em;
     opacity: 0.4;
   }
+  .store-list {
+    list-style: none;
+    column-count: 2;
+    column-gap: 5px;
+    padding: 5px;
+}
+
+.right-scene {
+  flex: 0 0 40%;
+  background-color: #ecf0f1;
+  overflow: scroll;
 
   .selected-gif {
     text-align: center;
@@ -53,22 +64,5 @@ body {
       margin: auto;
     }
   }
-}
-
-.right-scene {
-  flex: 0 0 40%;
-  background-color: #ecf0f1;
-  overflow: scroll;
-
-  .gif-list {
-    column-count: 2;
-    column-gap: 5px;
-    padding: 5px;
-
-    .gif {
-      width: 100%;
-      margin: 5px;
-      cursor: pointer;
-    }
   }
 }

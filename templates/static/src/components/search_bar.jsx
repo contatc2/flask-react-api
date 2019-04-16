@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class SearchBar extends React.Component {
+class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -8,7 +8,7 @@ export default class SearchBar extends React.Component {
     };
   }
 
-  handleUpdate = (event) => {
+  handleUpdate(event) {
     const { search } = this.props;
     this.setState({
       term: event.target.value
@@ -28,4 +28,6 @@ export default class SearchBar extends React.Component {
     );
   }
 }
+
+export default SearchBar;
 

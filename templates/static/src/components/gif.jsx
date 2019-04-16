@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Gif extends Component {
+class Gif extends React.Component {
   // shouldComponentUpdate(nextProps) {
   //   const { id } = this.props;
   //   return nextProps.id !== id;
@@ -21,3 +21,5 @@ export default class Gif extends Component {
     );
   }
 }
+
+export default Gif;
